@@ -1,0 +1,94 @@
+/* header */
+header, .wrap, #news_slide {
+    width:calc(100% - 60px);
+    margin:0 auto;
+}
+header {
+    background-color: pink;
+    display:flex; flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+header .menu {}
+header .menu #mainMenu {
+    background-color: aqua;
+}
+header .menu #mainMenu > * {margin-bottom: 8px;}
+header .menu #mainMenu span {
+    display: block;
+    width:40px; height: 5px; background-color: black;
+}
+header .menu #mainMenu span:nth-child(1) {}
+header .menu #mainMenu span:nth-child(2) {}
+header .menu #mainMenu span:nth-child(3) {}
+header .menu nav {display:none;}/* 메뉴 숨기기 */
+header .menu nav a {}
+header .mainLogo {}
+header .mainLogo img {width:130px; height: 69px;}
+header .h_right {
+    display: flex;
+}
+header .h_right #searchFrm {}
+header .h_right #searchFrm fieldset {}
+header .h_right #searchFrm fieldset #searchTxt {}
+header .h_right #searchFrm fieldset #searchBtn {}
+header .h_right #searchFrm fieldset #searchBtn img {}
+header .h_right #lang {}
+header .h_right #lang option {}
+/* main */
+main {}
+main video {}
+/* 메인 배너 */
+main .m_bnr {width: 100%;}
+main .m_bnr .m_bnr_bg {
+    background: url(../images/main_bnr_bg.jpg) no-repeat;
+    
+}
+main .m_bnr .m_bnr_bg img {}
+main .m_bnr .m_bnr_bg img:first-child {}
+main .m_bnr .m_bnr_bg img:last-child {}
+main .wrap {}
+main .wrap h2 {}
+main .wrap .contents {}
+main .wrap .contents .notice {}
+main .wrap .contents .notice p {}
+main .wrap .contents .notice .Fbtn {}
+main .wrap .contents .artist {}
+main .wrap .contents .artist p {}
+main .wrap .contents .artist p img {}
+main .wrap .contents .artist p img .Fbtn {}
+main .wrap .contents .actor p {}
+main .wrap .contents .actor p img {}
+main .wrap .contents .actor p img .Fbtn {}
+/* yg life */
+main #life_slide {}
+main #life_slide .swiper-wrapper {}
+main #life_slide .swiper-wrapper .swiper-slide {}
+main #life_slide .swiper-wrapper .slide1 {}
+main #life_slide .swiper-wrapper .slide2 {}
+main #life_slide .swiper-wrapper .slide3 {}
+main #life_slide .swiper-wrapper .swiper-slide p {}
+main #life_slide .swiper-wrapper .swiper-slide p img {}
+/* yg news */
+main #news_slide {}
+main #news_slide .swiper-wrapper {}
+main #news_slide .swiper-wrapper .swiper-slide {}
+main #news_slide .swiper-wrapper .swiper-slide img {}
+main #news_slide .swiper-wrapper .slide1 {}
+main #news_slide .swiper-wrapper .slide2 {}
+main #news_slide .swiper-wrapper .slide3 {}
+main #news_slide .swiper-wrapper .slide4 {}
+main #news_slide .swiper-wrapper .slide5 {}
+main #news_slide .swiper-scrollbar {}
+/* footer */
+footer {}
+footer .f-top {}
+footer .f-top .t-left {}
+footer .f-top .t-left p {}
+footer .f-top .t-right {}
+footer .f-top .t-right a {}
+footer .f-btm {}
+footer .f-btm h1 {}
+footer .f-btm h1 img {}
+footer .f-btm p {}

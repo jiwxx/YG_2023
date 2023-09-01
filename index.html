@@ -5,14 +5,140 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="">
     <meta name="description" content="">
-    <title>Document</title>
+    <title>YG Entertainment</title>
     <!-- 파비콘 자리 -->
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/index.css">
+    <!-- swiper slide -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 </head>
 <body>
     <header>
-        
+        <div class="menu">
+            <!-- 메뉴 버튼 -->
+            <button type="button" id="mainMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <!-- 메뉴 -->
+            <nav>
+                <a href="#">NOTICE</a>
+                <a href="#">NEWS</a>
+                <a href="#">ARTISTS</a>
+                <a href="#">ACTORS</a>
+                <a href="#">MULTIMEDIA</a>
+                <a href="#">WITH</a>
+                <a href="#">AUDITION</a>
+            </nav>
+        </div>
+        <a href="#" class="mainLogo"><img src="./images/logo.png" alt="yg entertainment"></a>
+        <div class="h_right">
+            <form action="#" method="get" id="searchFrm">
+                <fieldset>
+                    <legend class="skip">검색양식</legend>
+                    <input type="text" name="search" id="searchTxt" placeholder="검색">
+                    <button type="button" id="searchBtn"><img src="./images/icon_search.png" alt="검색하기"></button>
+                </fieldset>
+            </form>
+            <select name="lang" id="lang">
+                <option value="kr">KR</option>
+                <option value="en">EN</option>
+                <option value="jp">JP</option>
+                <option value="cn">CN</option>
+            </select>
+        </div>
     </header>
+    <main>
+        <video src="#" autoplay muted loop controls></video>
+        <div class="m_bnr">
+            <div class="m_bnr_bg">
+                <img src="./images/main_bnr_blackpink.png" alt="">
+                <img src="./images/m_bnr_txt1.png" alt="">
+                <img src="./images/m_bnr_txt2.png" alt="">
+            </div>
+        </div>
+        <div class="wrap">
+            <h2>YG FAMILY</h2>
+            <div class="contents">
+                <div class="notice">
+                    <p>[안내] JISOO [ME] PHOTOBOOK [SPECIAL EDITION] 발매 안내</p>
+                    <p>[안내] JISOO [ME] PHOTOBOOK [SPECIAL EDITION] 발매 안내</p>
+                    <p>[안내] JISOO [ME] PHOTOBOOK [SPECIAL EDITION] 발매 안내</p>
+                    <p>[안내] JISOO [ME] PHOTOBOOK [SPECIAL EDITION] 발매 안내</p>
+                    <p>[안내] JISOO [ME] PHOTOBOOK [SPECIAL EDITION] 발매 안내</p>
+                    <p>[안내] JISOO [ME] PHOTOBOOK [SPECIAL EDITION] 발매 안내</p>
+                    <button type="button" class="Fbtn">NOTICE</button>
+                </div>
+                <div class="artist">
+                    <p><img src="./images/artist.png" alt=""></p>
+                    <button type="button" class="Fbtn">ARTIST</button>
+                </div>
+                <div class="actor">
+                    <p><img src="./images/actor.png" alt=""></p>
+                    <button type="button" class="Fbtn">ACTOR</button>
+                </div>
+            </div>
+        </div>
+        <!-- 1. swiper-slide -->
+        <!-- .swiper슬라이드의 전체 틀 -->
+        <div class="swiper" id="life_slide">
+            <!-- .swiper-wrapper 슬라이드 한장 한장을 묶어주는 슬라이드 영역 틀 -->
+            <div class="swiper-wrapper">
+                <!-- .swiper-slide 슬라이드 개별 한장 부모 -->
+                <div class="swiper-slide slide1">
+                    <p><img src="./images/m_life_1.jpg" alt=""></p>
+                    <p>[TREASURE MAP]TEASER<br>오직 [웃음]으로 보답합니다.</p>
+                </div>
+                <div class="swiper-slide slide2">
+                    <p><img src="./images/m_life_1.jpg" alt=""></p>
+                    <p>[TREASURE MAP]TEASER<br>오직 [웃음]으로 보답합니다.</p>
+                </div>
+                <div class="swiper-slide slide3">
+                    <p><img src="./images/m_life_1.jpg" alt=""></p>
+                    <p>[TREASURE MAP]TEASER<br>오직 [웃음]으로 보답합니다.</p>
+                </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+		</div>
+        <!-- 2. swiper-slide -->
+        <div class="swiper" id="news_slide">
+            <!-- .swiper-wrapper 슬라이드 한장 한장을 묶어주는 슬라이드 영역 틀 -->
+            <div class="swiper-wrapper">
+                <!-- .swiper-slide 슬라이드 개별 한장 부모 -->
+                <div class="swiper-slide slide1"><img src="./images/m_news_1.jpg" alt=""></div>
+                <div class="swiper-slide slide2"><img src="./images/m_news_2.jpg" alt=""></div>
+                <div class="swiper-slide slide3"><img src="./images/m_news_3.jpg" alt=""></div>
+                <div class="swiper-slide slide4"><img src="./images/m_news_4.jpg" alt=""></div>
+                <div class="swiper-slide slide5"><img src="./images/m_news_5.jpg" alt=""></div>
+            </div>
+            <div class="swiper-scrollbar"></div> <!-- 스크롤바는 swiper와 형제로 두지않는다 -->
+		</div>
+    </main>
+    <footer>
+        <div class="f-top">
+            <div class="t-left">
+                <p>ABOUT YG</p>
+                <p>YG RECRUIT</p>
+                <p>CUSTOMER CENTER</p>
+                <p>개인정보처리방침</p>
+            </div>
+            <div class="t-right">
+                <a href="#">유튜브</a>
+                <a href="#">페이스북</a>
+                <a href="#">트위터</a>
+                <a href="#">인스타그램</a>
+            </div>
+        </div>
+        <div class="f-btm">
+            <h1><img src="./images/logo_w.png" alt=""></h1>
+            <p>
+                YG Entertainment의 모든 컨텐츠는 저작권의 보호를 받고 있습니다.<br>
+                Copyright YG Entertainment All Rights Reserved.
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
