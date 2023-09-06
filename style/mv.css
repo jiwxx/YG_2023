@@ -1,0 +1,116 @@
+main {
+    width:calc(100% - 60px);
+    margin:0 auto;
+    padding-top: 100px;
+}
+main .mvlist_top,
+main .mvlist_btm,
+main .mv {margin-bottom: 100px;}
+/* main > * {margin-bottom: 50px;} */
+main h1 {
+    font-size: 3.1rem; font-weight: 800;
+    padding-bottom:30px;
+    border-bottom:1px solid #000;
+}
+main .mvlist_top {
+    /* background-color: lightgoldenrodyellow; */
+    margin-top: 50px;
+}
+main .mvlist_top ul {
+    display: flex; flex-flow: row wrap;
+    justify-content: space-between;
+}
+main .mvlist_top ul li {cursor: pointer; overflow: hidden;}
+/* main .mvlist_top ul li img::after {
+    content:'';
+    background-color: rgba(0,0,0,0.3);
+    display:block;
+    width:400px; height:400px;
+} */
+main .mvlist_top ul li img {
+    width:400px; height: 400px;
+    transition:transform 0.5s ease;
+}
+main .mvlist_top ul li img:hover {
+    transform:scale(1.1);
+}
+main .mvlist_top ul li span {
+    display: block; font-size:2.3rem;
+    text-align: center;
+    margin-top:30px;
+}
+main .mvlist_btm {
+    /* background-color: aqua; */
+}
+main .mvlist_btm ul {
+    display: flex; flex-flow: row wrap;
+    justify-content: space-between;
+}
+main .mvlist_btm ul li {cursor: pointer; overflow: hidden;}
+main .mvlist_btm ul li img {
+    width:400px; height: 400px;
+    transition:transform 0.5s ease;
+}
+main .mvlist_btm ul li img:hover {
+    transform:scale(1.1);
+}
+main .mvlist_btm ul li span {
+    display: block; font-size:2.3rem;
+    text-align: center;
+    margin-top:30px;
+}
+/* 뮤직비디오 1~4 top*/
+main .mv1-4 .mv > * {margin: 0 87px 50px 87px;}
+main .mv1-4 .mv {
+    border:1px solid #000;
+}
+main .mv1-4 .mv .mv-top {
+    border-bottom: 1px solid #000;
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom:25px;
+}
+main .mv1-4 .mv .mv-top h2 {
+    font-size: 2.3rem;
+    margin-top: 50px;
+}
+main .mv1-4 .mv .mv-top .icon {}
+main .mv1-4 .mv .mv-top .icon .mv_L {}
+main .mv1-4 .mv .mv-top .icon .mv_C {}
+main .mv1-4 .mv .mv-top .icon p {cursor: pointer; display: inline-block;}
+main .mv1-4 .mv .mv-top .icon a {margin-top: 50px;}
+main .mv1-4 .mv .mv-top .icona img {width:35px; height: 35px;}
+main .mv1-4 .mv .video {overflow: hidden;}
+main .mv1-4 .mv .video iframe {
+    width:100%; height: 700px;
+}
+/* 뮤직비디오 5~7 btm */
+main .mv5-8 .mv > * {margin: 0 87px 50px 87px;}
+main .mv5-8 .mv {
+    border:1px solid #000;
+}
+main .mv5-8 .mv .mv-top {
+    border-bottom: 1px solid #000;
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom:25px;
+}
+main .mv5-8 .mv .mv-top h2 {
+    font-size: 2.3rem;
+    margin-top: 50px;
+}
+main .mv5-8 .mv .mv-top .icon {}
+main .mv5-8 .mv .mv-top .icon .mv_L {}
+main .mv5-8 .mv .mv-top .icon .mv_C {}
+main .mv5-8 .mv .mv-top .icon p {cursor: pointer; display: inline-block;}
+main .mv5-8 .mv .mv-top .icon a {margin-top: 50px;}
+main .mv5-8 .mv .mv-top .icona img {width:35px; height: 35px;}
+main .mv5-8 .mv .video {overflow: hidden;}
+main .mv5-8 .mv .video iframe {
+    width:100%; height: 700px;
+}
+
+.active {display: block !important;}
+.close {display: none;}

@@ -1,0 +1,53 @@
+main {
+    width:calc(100% - 60px);
+    margin:0 auto;
+}
+main .n_top {}
+main .n_top h1 {
+    font-size: 3.1rem; font-weight: 800;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #000;
+}
+main .n_top section {
+    display: flex; flex-flow: row nowrap;
+    /* justify-content: space-between; */
+}
+main .n_top section .mainNews1 {}
+main .n_top section .mainNews2 {}
+main .n_top section .mainNews3 {}
+main .n_top section .mainNews:first-child{margin-left:0;}
+main .n_top section .mainNews {
+    margin-left:50px;
+}
+main .n_top section .mainNews .m_NImg {}
+main .n_top section .mainNews .m_NImg img {
+    background-color: indianred;
+    width:500px; height: 400px;}
+main .n_top section .mainNews .m_NTxt {display:block; font-size: 2.1rem; line-height: 40px;}
+/* 리스트 */
+main .n_btm {}
+/* left */
+main .n_btm .newsLeft {}
+main .n_btm .newsLeft a {
+    display:flex; flex-flow: row nowrap;
+    align-items: center;
+}
+main .n_btm .newsLeft a .newsImg {padding-right: 30px;}
+main .n_btm .newsLeft a .newsImg img {
+    width:214px; height: 214px;
+    background-color: powderblue;
+}
+main .n_btm .newsLeft a .newsWrap {}
+main .n_btm .newsLeft a .newsWrap > * {padding: 10px;}
+main .n_btm .newsLeft a .newsWrap .newsTitle {font-size: 1.7rem; line-height: 33px;}
+main .n_btm .newsLeft a .newsWrap .newsdate {display: block; font-size:1.3rem; line-height: 25px;}
+main .n_btm .newsLeft a .newsWrap .twtlink {}
+/* right */
+main .n_btm .newsRight {}
+main .n_btm .newsRight a {}
+main .n_btm .newsRight a .newsImg {}
+main .n_btm .newsRight a .newsImg img {}
+main .n_btm .newsRight a .newsWrap {}
+main .n_btm .newsRight a .newsWrap .newsTitle {}
+main .n_btm .newsRight a .newsWrap .newsdate {}
+main .n_btm .newsRight a .newsWrap .twtlink {}
