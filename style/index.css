@@ -29,10 +29,26 @@ header .mainLogo img {width:130px; height: 69px;}
 header .h_right {
     display: flex;
 }
-header .h_right #searchFrm {}
-header .h_right #searchFrm fieldset {}
-header .h_right #searchFrm fieldset #searchTxt {}
-header .h_right #searchFrm fieldset #searchBtn {}
+header .h_right #searchFrm {
+    
+}
+header .h_right #searchFrm fieldset {
+    position: relative;
+}
+header .h_right #searchFrm fieldset #searchTxt::placeholder {
+    color:#fff;
+    padding-left:44px;
+}
+header .h_right #searchFrm fieldset #searchTxt {
+    background-color: #000;
+    width:321px; height:55px;
+    border-radius: 30px;
+    
+}
+header .h_right #searchFrm fieldset #searchBtn {
+    background: none;
+    position:absolute; top:18px; left:15px;
+}
 header .h_right #searchFrm fieldset #searchBtn img {}
 header .h_right #lang {}
 header .h_right #lang option {}
@@ -49,18 +65,63 @@ main .m_bnr .m_bnr_bg img {}
 main .m_bnr .m_bnr_bg img:first-child {}
 main .m_bnr .m_bnr_bg img:last-child {}
 main .wrap {}
-main .wrap h2 {}
-main .wrap .contents {}
-main .wrap .contents .notice {}
+main .wrap h2 {font-size: 2.3rem; font-weight: 800; letter-spacing: -0.02em;
+    text-align: center;
+    margin-bottom: 50px;
+}
+main .wrap .contents > * {
+    width:400px; height:400px;
+    background-color: #f1f1f1;
+    margin-right:26px;
+}
+main .wrap .contents {
+    display: flex; flex-flow: row nowrap;
+    justify-content: center;
+}
+main .wrap .contents .notice {
+    border: 2px solid #ddd;
+    position: relative;
+}
 main .wrap .contents .notice p {}
-main .wrap .contents .notice .Fbtn {}
+main .wrap .contents .notice .Fbtn {
+    background: none;
+    padding:20px; font-size: 1.7rem; letter-spacing: -0.02em;
+    border:1px solid #000;
+    position:absolute; bottom:76px; left:130px; color:#30E413;
+}
 main .wrap .contents .artist {}
-main .wrap .contents .artist p {}
-main .wrap .contents .artist p img {}
-main .wrap .contents .artist p img .Fbtn {}
-main .wrap .contents .actor p {}
-main .wrap .contents .actor p img {}
-main .wrap .contents .actor p img .Fbtn {}
+main .wrap .contents .artist .artist_bg {
+    background: url(../images/artist.png) no-repeat;
+    width:400px; height:400px;
+    background-size: cover;
+    position:relative;
+    border:2px solid #ddd;
+}
+main .wrap .contents .artist .artist_bg p {}
+main .wrap .contents .artist .artist_bg .Fbtn {
+    background: none;
+    padding:20px; font-size: 1.7rem; letter-spacing: -0.02em;
+    border:1px solid #000;
+    position:absolute; bottom:76px; left:130px; color:#30E413;
+}
+main .wrap .contents .actor {
+    width:400px; height:400px;
+    position: relative;
+}
+main .wrap .contents .actor .actor_bg {
+    background: url(../images/actor.png);
+    width:400px; height:400px;
+    background-size: cover;
+    position:relative;
+    border:2px solid #ddd;
+}
+main .wrap .contents .actor .actor_bg p {}
+main .wrap .contents .actor .actor_bg .Fbtn {
+    background: none;
+    padding:20px; font-size: 1.7rem; letter-spacing: -0.02em;
+    border:1px solid #000;
+    position:absolute; bottom:76px; left:130px; color:#30E413;
+}
 /* yg life */
 main #life_slide {}
 main #life_slide .swiper-wrapper {}
