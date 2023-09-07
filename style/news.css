@@ -1,6 +1,7 @@
 main {
     width:calc(100% - 60px);
     margin:0 auto;
+    padding-top:100px;
 }
 main .n_top {}
 main .n_top h1 {
@@ -10,7 +11,10 @@ main .n_top h1 {
 }
 main .n_top section {
     display: flex; flex-flow: row nowrap;
-    /* justify-content: space-between; */
+    justify-content: center;
+    padding:100px 0 60px 0;
+    border-bottom: 1px solid #000;
+    margin-bottom: 150px;
 }
 main .n_top section .mainNews1 {}
 main .n_top section .mainNews2 {}
@@ -23,14 +27,23 @@ main .n_top section .mainNews .m_NImg {}
 main .n_top section .mainNews .m_NImg img {
     background-color: indianred;
     width:500px; height: 400px;}
-main .n_top section .mainNews .m_NTxt {display:block; font-size: 2.1rem; line-height: 40px;}
+main .n_top section .mainNews .m_NTxt {
+    display:block; font-size: 2.1rem; line-height: 40px;
+    padding-top:70px;
+}
 /* 리스트 */
-main .n_btm {}
+main .n_btm {
+    display: flex; flex-flow: column wrap;
+    height: 1200px; 
+    /* align-items: center; */
+}
 /* left */
 main .n_btm .newsLeft {}
+main .n_btm .newsLeft > * {padding: 50px 0; border-bottom: 1px solid #000;}
 main .n_btm .newsLeft a {
     display:flex; flex-flow: row nowrap;
-    align-items: center;
+    align-items: flex-start;
+    width:95%;
 }
 main .n_btm .newsLeft a .newsImg {padding-right: 30px;}
 main .n_btm .newsLeft a .newsImg img {
@@ -38,16 +51,32 @@ main .n_btm .newsLeft a .newsImg img {
     background-color: powderblue;
 }
 main .n_btm .newsLeft a .newsWrap {}
-main .n_btm .newsLeft a .newsWrap > * {padding: 10px;}
 main .n_btm .newsLeft a .newsWrap .newsTitle {font-size: 1.7rem; line-height: 33px;}
-main .n_btm .newsLeft a .newsWrap .newsdate {display: block; font-size:1.3rem; line-height: 25px;}
-main .n_btm .newsLeft a .newsWrap .twtlink {}
+main .n_btm .newsLeft a .newsWrap .newsdate {display: block; font-size:1.3rem; line-height: 25px; margin-bottom: 75px;}
+main .n_btm .newsLeft a .newsWrap .twtlink:hover {background-color: #30E413; color:#000;}
+main .n_btm .newsLeft a .newsWrap .twtlink {
+    border-radius: 30px;
+    background-color: #000; color:#fff; padding:10px;
+}
 /* right */
 main .n_btm .newsRight {}
-main .n_btm .newsRight a {}
-main .n_btm .newsRight a .newsImg {}
-main .n_btm .newsRight a .newsImg img {}
+main .n_btm .newsRight > * {padding: 50px 0; border-bottom: 1px solid #000;}
+main .n_btm .newsRight a {
+    display:flex; flex-flow: row nowrap;
+    align-items: flex-start;
+    width:90%;
+}
+main .n_btm .newsRight a .newsImg {padding-right: 30px;}
+main .n_btm .newsRight a .newsImg img {
+    width:214px; height: 214px;
+    background-color: lightpink;
+}
+
 main .n_btm .newsRight a .newsWrap {}
-main .n_btm .newsRight a .newsWrap .newsTitle {}
-main .n_btm .newsRight a .newsWrap .newsdate {}
-main .n_btm .newsRight a .newsWrap .twtlink {}
+main .n_btm .newsRight a .newsWrap .newsTitle {font-size: 1.7rem; line-height: 33px;}
+main .n_btm .newsRight a .newsWrap .newsdate {display: block; font-size:1.3rem; line-height: 25px; margin-bottom: 75px;}
+main .n_btm .newsRight a .newsWrap .twtlink:hover {background-color: #30E413; color:#000;}
+main .n_btm .newsRight a .newsWrap .twtlink {
+    border-radius: 30px;
+    background-color: #000; color:#fff; padding:10px;
+}
