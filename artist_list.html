@@ -8,21 +8,74 @@
     <title>Artist | YG Entertainment</title>
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/artist_list.css">
+    <!-- swiper slide -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 </head>
 <body>
     <main>
         <div class="artist">
-            <div class="a_left">
-                <button type="button">WINNER</button>
-                <button type="button">BIGBANG</button>
-                <button type="button">BLACKPINK</button>
-                <button type="button">G-DRAGON</button>
-                <button type="button">AKMU</button>
-            </div>
-            <div class="a_right">
-                
+            <h1>ARTIST</h1>
+            <div class="artistWrap">
+                <div class="a_left">
+                    <button type="button">WINNER</button>
+                    <button type="button">BIGBANG</button>
+                    <button type="button">BLACKPINK</button>
+                    <button type="button">G-DRAGON</button>
+                    <button type="button">AKMU</button>
+                </div>
+                <div class="a_right">
+                    <img src="./images/blpin_black.png" alt="">
+                </div>
             </div>
         </div>
+        <div class="mv">
+            <h1>MUSIC VIDEO</h1>
+            <video src=""></video>
+            <div class="mvTxt">
+                <p>2nd 정규 앨범</p>
+                <h2>BORN PINK</h2>
+                <p>세계 최정상 걸그룹 BLACKPINK가 두 번째 정규 앨범 [BORN PINK] 를 발표했다. 지난 8월 선 공개곡 ‘PINK VENOM’으로<br>
+                전세계 리스너들을 중동시킨 BLACKPINK가 두 번째 정규앨범 [BORN PINK]로 또 한 번 전 세계를 매혹시킬 전망이다.</p>
+                <p>[BORN PINK]는 태생부터 남다른 존재감을 지닌 BLACKPINK의 자신감을 드러내는 앨범명으로, 타이틀 곡 ‘SHUT DOWN’을<br>
+                비롯한 BLACKPINK만의 강렬한 사운드를 담은 독보적인 트랙 8곡이 수록 됐다.</p>
+                <p>선공개곡부터 정규앨범과 월드투어까지. 대규모 프로젝트를 통해 블랙핑크가 어떠한 신기록을 써내려갈지 주목된다.</p>
+            </div>
+        </div>
+        <div class="music">
+            <h1>MUSIC</h1>
+            <!-- 2. swiper-slide -->
+            <div class="swiper" id="music_slide">
+                <!-- .swiper-wrapper 슬라이드 한장 한장을 묶어주는 슬라이드 영역 틀 -->
+                <div class="swiper-wrapper">
+                    <!-- .swiper-slide 슬라이드 개별 한장 부모 -->
+                    <div class="swiper-slide slide1"><a href="#"></a></div>
+                    <div class="swiper-slide slide2"><a href="#"></a></div>
+                    <div class="swiper-slide slide3"><a href="#"></a></div>
+                    <div class="swiper-slide slide4"><a href="#"></a></div>
+                    <div class="swiper-slide slide5"><a href="#"></a></div>
+                </div>
+            </div>
+            <div class="musicBtm">
+                <div class="musicTxt">
+                    <p>LISTEN ON</p>
+                    <P>BUY NOW</P>
+                </div>
+                <div class="musicbar">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="artist_bg"></div>
     </main>
+    <script>
+        const news_slide = new Swiper("#music_slide",{
+            slidesPerView:6,
+            centeredSlides:true,
+            loop:true,
+            autoplay:{delay:2000},
+            speed:800,
+        })
+    </script>
 </body>
 </html>
