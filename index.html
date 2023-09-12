@@ -26,15 +26,15 @@
             <!-- 메뉴 -->
             <nav>
                 <a href="#">NOTICE</a>
-                <a href="#">NEWS</a>
-                <a href="#">ARTISTS</a>
+                <a href="./news.html">NEWS</a>
+                <a href="./artist_list.html">ARTISTS</a>
                 <a href="#">ACTORS</a>
-                <a href="#">MULTIMEDIA</a>
+                <a href="./mv.html">MULTIMEDIA</a>
                 <a href="#">WITH</a>
                 <a href="#">AUDITION</a>
-            </nav>
+            </nav> 
         </div>
-        <a href="#" class="mainLogo"><img src="./images/logo.png" alt="yg entertainment"></a>
+        <a href="./index.html" class="mainLogo"><img src="./images/logo.png" alt="yg entertainment"></a>
         <div class="h_right">
             <form action="#" method="get" id="searchFrm">
                 <fieldset>
@@ -52,7 +52,9 @@
         </div>
     </header>
     <main>
-        <video src="#" autoplay muted loop controls></video>
+        <div class="mainVideo">
+            <video src="#" autoplay muted loop controls></video>
+        </div>
         <div class="m_bnr">
             <div class="m_bnr_bg">
                 <img src="./images/m_bnr_txt2.png" alt="">
@@ -77,24 +79,26 @@
             <h2>YG FAMILY</h2>
             <div class="contents">
                 <div class="notice">
-                    <a href="#">[안내] JISOO [ME] PHOTOBOOK [SPECIAL EDITION] 발매 안내</a>
-                    <a href="#">[안내] JISOO [ME] PHOTOBOOK [SPECIAL EDITION] 발매 안내</a>
-                    <a href="#">[안내] JISOO [ME] PHOTOBOOK [SPECIAL EDITION] 발매 안내</a>
-                    <a href="#">[안내] JISOO [ME] PHOTOBOOK [SPECIAL EDITION] 발매 안내</a>
-                    <a href="#">[안내] JISOO [ME] PHOTOBOOK [SPECIAL EDITION] 발매 안내</a>
-                    <a href="#">[안내] JISOO [ME] PHOTOBOOK [SPECIAL EDITION] 발매 안내</a>
-                    <button type="button" class="Fbtn">NOTICE</button>
+                    <div class="notice_con">
+                        <a href="#">[안내] JISOO [ME] PHOTOBOOK [SPECIAL EDITION] 발매 안내</a>
+                        <a href="#">[안내] JISOO [ME] PHOTOBOOK [SPECIAL EDITION] 발매 안내</a>
+                        <a href="#">[안내] JISOO [ME] PHOTOBOOK [SPECIAL EDITION] 발매 안내</a>
+                        <a href="#">[안내] JISOO [ME] PHOTOBOOK [SPECIAL EDITION] 발매 안내</a>
+                        <a href="#">[안내] JISOO [ME] PHOTOBOOK [SPECIAL EDITION] 발매 안내</a>
+                        <a href="#">[안내] JISOO [ME] PHOTOBOOK [SPECIAL EDITION] 발매 안내</a>
+                    </div>
+                    <a href="#" class="Fbtn">NOTICE</a>
                 </div>
                 <div class="artist">
                     <div class="artist_bg">
                         <!-- <p><img src="./images/artist.png" alt=""></p> -->
-                        <button type="button" class="Fbtn">ARTIST</button>
+                        <a href="./artist_list.html" class="Fbtn">ARTIST</a>
                     </div>
                 </div>
                 <div class="actor">
                     <div class="actor_bg">
                         <!-- <p><img src="./images/actor.png" alt=""></p> -->
-                        <button type="button" class="Fbtn">ACTOR</button>
+                        <a href="#" class="Fbtn">ACTOR</a>
                     </div>
                 </div>
             </div>
@@ -152,7 +156,7 @@
             </div>
         </div>
         <div class="wrap3">
-            <h2>YG NEWS</h2>
+            <a href="./news.html"><h2>YG NEWS</h2></a>
             <!-- 2. swiper-slide -->
             <div class="swiper" id="news_slide">
                 <!-- .swiper-wrapper 슬라이드 한장 한장을 묶어주는 슬라이드 영역 틀 -->

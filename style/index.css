@@ -18,9 +18,9 @@ header .menu #mainMenu {
     z-index: 100;
 }
 header .menu #mainMenu > * {margin-bottom: 8px;}
-header .menu #mainMenu span {}
-header .menu #mainMenu span {}
-header .menu #mainMenu span {}
+header .menu #mainMenu span:first-child {}
+header .menu #mainMenu span:nth-of-type(2) {}
+header .menu #mainMenu span:last-child {}
 header .menu #mainMenu span {
     display: block;
     width:40px; height: 4px; 
@@ -73,10 +73,12 @@ header .h_right #searchFrm fieldset {
 }
 header .h_right #searchFrm fieldset #searchTxt::placeholder {
     color:#fff;
-    padding-left:44px;
+    
 }
 header .h_right #searchFrm fieldset #searchTxt {
     background-color: #000;
+    padding-left:44px;
+    color:#fff;
     width:321px; height:55px;
     border-radius: 30px;
     
@@ -97,7 +99,8 @@ header .h_right #lang option {}
 .active {display:flex !important;}
 /* main */
 main {}
-main video {width:100%;}
+main .mainVideo {}
+main .mainVideo video {width:100%;}
 /* 메인 배너 */
 main .m_bnr {overflow: hidden;}
 main .m_bnr .m_bnr_bg {
@@ -153,14 +156,16 @@ main .m_bnr .m_bnr_bg img {
     100% {transform: rotate(360deg);}
 }
 main .wrap {
-    margin-top: 200px;
+    padding-top: 200px;
+    width:calc(100% - 60px);
+    margin:0 auto;
 }
 main .wrap h2 {font-size: 2.3rem; font-weight: 800; letter-spacing: -0.02em;
     text-align: center;
     margin-bottom: 50px;
 }
 main .wrap .contents > * {
-    width:400px; height:400px;
+    width:600px; height:600px;
     background-color: #f1f1f1;
     margin-right:26px;
 }
@@ -173,25 +178,27 @@ main .wrap .contents .notice {
     position: relative;
     padding:10px;
 }
-main .wrap .contents .notice a:hover {color: #30E413;}
-main .wrap .contents .notice a {
-    font-size: 1.3rem; line-height: 35px;
+main .wrap .contents .notice .notice_con {}
+main .wrap .contents .notice .notice_con a:hover {color: #30E413;}
+main .wrap .contents .notice .notice_con a {
+    font-size: 1.7rem; line-height: 40px;
     display: block;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+    margin-bottom: 30px;
 }
 main .wrap .contents .notice .Fbtn:hover {background-color: #000;}
 main .wrap .contents .notice .Fbtn {
     background-color:#fff ;
     padding:20px; font-size: 1.7rem; letter-spacing: -0.02em;
     border:1px solid #000;
-    position:absolute; bottom:76px; left:130px; color:#30E413;
+    position:absolute; bottom:76px; left:222px; color:#30E413;
 }
 main .wrap .contents .artist {}
 main .wrap .contents .artist .artist_bg {
     background: url(../images/artist.png) no-repeat;
-    width:400px; height:400px;
+    width:600px; height:600px;
     background-size: cover;
     position:relative;
     border:2px solid #ddd;
@@ -202,15 +209,14 @@ main .wrap .contents .artist .artist_bg .Fbtn {
     background-color:#fff ;
     padding:20px; font-size: 1.7rem; letter-spacing: -0.02em;
     border:1px solid #000;
-    position:absolute; bottom:76px; left:130px; color:#30E413;
+    position:absolute; bottom:76px; left:222px; color:#30E413;
 }
 main .wrap .contents .actor {
-    width:400px; height:400px;
     position: relative;
 }
 main .wrap .contents .actor .actor_bg {
     background: url(../images/actor.png);
-    width:400px; height:400px;
+    width:100%; height:600px;
     background-size: cover;
     position:relative;
     border:2px solid #ddd;
@@ -221,7 +227,7 @@ main .wrap .contents .actor .actor_bg .Fbtn {
     background-color:#fff ;
     padding:20px; font-size: 1.7rem; letter-spacing: -0.02em;
     border:1px solid #000;
-    position:absolute; bottom:76px; left:130px; color:#30E413;
+    position:absolute; bottom:76px; left:222px; color:#30E413;
 }
 /* yg life */
 main .wrap2 {
@@ -252,13 +258,13 @@ main .wrap2 #life_slide .swiper-wrapper .swiper-slide .slide_contents {
 main .wrap2 #life_slide .swiper-wrapper .swiper-slide .slide_contents .slide_img {width:800px; height: 450px;}
 main .wrap2 #life_slide .swiper-wrapper .swiper-slide .slide_contents .slide_img img {
     width:800px; height: 450px;
-    position:absolute; top:0; left:398px;
+    position:absolute; top:0; left:300px;
 }
 main .wrap2 #life_slide .swiper-wrapper .swiper-slide .slide_contents .slide_txt {
     width:550px; height:354px;
     background-color: #f1f1f1;
     border:2px solid #000;
-    position: absolute; top:50px; right:410px;
+    position: absolute; top:50px; right:300px;
     display: flex; flex-flow: column nowrap;
     justify-content: center; align-items: center;
 }

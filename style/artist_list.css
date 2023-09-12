@@ -1,11 +1,14 @@
-main {
-    /* width:calc(100% - 60px);  */
+main {}
+main .blackpink #blpin_bg {
+    background: linear-gradient(180deg, rgba(255,255,255,1) 37.5%, rgba(228,136,161,1) 100%);
+    background-size: 400%;
 }
 main .artist {
     padding-top:100px;
-    background-color: lavenderblush;
+    background-color: aqua;
     height: 1028px;
     width:calc(100% - 60px); margin:0 auto;
+    
 }
 main .artist h1 {
     font-size: 3.1rem; font-weight: 800;
@@ -18,78 +21,92 @@ main .artist .artistWrap {
 }
 main .artist .artistWrap .a_left {padding-left:100px;}
 main .artist .artistWrap .a_left button:last-child {margin-bottom: 0;}
+main .artist .artistWrap .a_left button:after {
+    content:''; display:block;
+    height: 1px; width: 682px; background-color: #000;
+    position: absolute; bottom:-50px;
+    
+}
+main .artist .artistWrap .a_left button:hover::after {}
 main .artist .artistWrap .a_left button {
     display:block;
+    background:none ;
     font-size: 4rem;
-    background: none;
     margin-bottom: 100px;
     font-weight: 500;
 }
 main .artist .artistWrap .a_right {}
 main .artist .artistWrap .a_right img {}
-main .mv {
+main .blackpink {}
+main .blackpink #blpin_bg {}
+main .blackpink #blpin_bg .mv {
     padding-top:200px;
     width:calc(100% - 60px); margin:0 auto;
 }
-main .mv h1 {
+main .blackpink #blpin_bg .mv h1 {
     font-size: 3.1rem; font-weight: 800;
     padding-bottom: 30px;
     border-bottom: 1px solid #000;
 }
-main .mv video {
+main .blackpink #blpin_bg .mv video {
     background-color: palegoldenrod;
     width:100%; height: 800px;
     margin-top:80px ;
 }
-main .mv .mvTxt {
+main .blackpink #blpin_bg .mv .mvTxt {
     text-align: center;
 }
-main .mv .mvTxt h2 {font-size: 3.1rem; font-weight: 700;}
-main .mv .mvTxt p {margin-top:80px;}
-main .mv .mvTxt p:first-child {font-size: 1.3rem;}
-main .mv .mvTxt p:nth-child(3),
-main .mv .mvTxt p:nth-child(4),
-main .mv .mvTxt p:nth-child(5) {font-size: 1.7rem; line-height: 40px;}
-main .music {padding-top:200px;}
-main .music h1 {
+main .blackpink #blpin_bg .mv .mvTxt h2 {font-size: 3.1rem; font-weight: 700;}
+main .blackpink #blpin_bg .mv .mvTxt p {margin-top:80px;}
+main .blackpink #blpin_bg .mv .mvTxt p:first-child {font-size: 1.3rem;}
+main .blackpink #blpin_bg .mv .mvTxt p:nth-child(3),
+main .blackpink #blpin_bg .mv .mvTxt p:nth-child(4),
+main .blackpink #blpin_bg .mv .mvTxt p:nth-child(5) {font-size: 1.7rem; line-height: 40px;}
+main .blackpink #blpin_bg .music {padding-top:200px;}
+main .blackpink #blpin_bg .music h1 {
     font-size: 3.1rem; font-weight: 800;
     padding-bottom: 30px;
     border-bottom: 1px solid #000;
     width:calc(100% - 60px); margin:0 auto;
 }
-main .music #music_slide {padding-top:150px;}
-main .music #music_slide .swiper-slide {}
-main .music #music_slide .swiper-wrapper {}
-main .music #music_slide .swiper-wrapper .swiper-slide {background-color: aqua; }
-main .music #music_slide .swiper-wrapper .swiper-slide a {display: block; width:400px; height: 400px;}
-main .music #music_slide .swiper-wrapper .slide1 a {background-image: url(../images/album2_04.jpg);}
-main .music #music_slide .swiper-wrapper .slide2 a {background-image: url(../images/album2_03.jpg);}
-main .music #music_slide .swiper-wrapper .slide3 a {background-image: url(../images/album2_05.jpg);}
-main .music #music_slide .swiper-wrapper .slide4 a {background-image: url(../images/album2_01.jpg);}
-main .music #music_slide .swiper-wrapper .slide5 a {background-image: url(../images/album2_02.jpg);}
-main .music .musicBtm {
+main .blackpink #blpin_bg .music #music_slide {padding-top:150px;}
+main .blackpink #blpin_bg .music #music_slide .swiper-slide {}
+main .blackpink #blpin_bg .music #music_slide .swiper-wrapper {}
+main .blackpink #blpin_bg .music #music_slide .swiper-wrapper .swiper-slide {background-color: aqua; }
+main .blackpink #blpin_bg .music #music_slide .swiper-wrapper .swiper-slide a {display: block; width:400px; height: 400px;}
+main .blackpink #blpin_bg .music #music_slide .swiper-wrapper .slide1 a {background-image: url(../images/album2_04.jpg);}
+main .blackpink #blpin_bg .music #music_slide .swiper-wrapper .slide2 a {background-image: url(../images/album2_03.jpg);}
+main .blackpink #blpin_bg .music #music_slide .swiper-wrapper .slide3 a {background-image: url(../images/album2_05.jpg);}
+main .blackpink #blpin_bg .music #music_slide .swiper-wrapper .slide4 a {background-image: url(../images/album2_01.jpg);}
+main .blackpink #blpin_bg .music #music_slide .swiper-wrapper .slide5 a {background-image: url(../images/album2_02.jpg);}
+main .blackpink #blpin_bg .music #music_slide .swiper-wrapper .swiper-slide a:hover {}
+main .blackpink #blpin_bg .music .musicBtm {
     display: flex; flex-flow: column nowrap;
     align-items: center;
 }
-main .music .musicBtm .musicTxt {
+main .blackpink #blpin_bg .music .musicBtm .musicTxt {
     display: flex;
     padding-top: 80px;
 }
-main .music .musicBtm .musicTxt p:hover {color:#000;}
-main .music .musicBtm .musicTxt p {font-size:3.1rem; font-weight:700;
-    background-color: #E488A1;
+main .blackpink #blpin_bg .music .musicBtm .musicTxt p:hover {color:#E488A1;}
+main .blackpink #blpin_bg .music .musicBtm .musicTxt p {font-size:3.1rem; font-weight:700;
+    background-color: #000;
     color:#fff;
     width:316px; height: 75px;
     text-align: center;
     padding-top: 15px;
 }
-main .music .musicBtm .musicTxt p:nth-child(1) {margin-right: 20px;}
-main .music .musicBtm .musicTxt p:nth-child(2) {}
-main .music .musicBtm .musicbar span {
+main .blackpink #blpin_bg .music .musicBtm .musicTxt p:nth-child(1) {margin-right: 20px;}
+main .blackpink #blpin_bg .music .musicBtm .musicTxt p:nth-child(2) {}
+main .blackpink #blpin_bg .music .musicBtm .musicbar span {
     display: block;
-    background-color: #E488A1;
+    background-color: #000;
     width:734px; height: 5px;
     margin: 80px 0;
     border-radius: 5px;
 }
-main .artist_bg {}
+main .blackpink #blpin_bg .btm_bg {
+    background: url(../images/list_bg.png) no-repeat;
+    background-size: 100%;
+    width:1920px; height:1290px;
+}
