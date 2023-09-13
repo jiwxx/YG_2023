@@ -16,12 +16,19 @@ header .menu #mainMenu {
     background: none;
     position:relative;
     z-index: 100;
+    width:40px; height: 30px; 
 }
 header .menu #mainMenu > * {margin-bottom: 8px;}
-header .menu #mainMenu span:first-child {}
-header .menu #mainMenu span:nth-of-type(2) {}
-header .menu #mainMenu span:last-child {}
+header .menu #mainMenu span:first-child { top:0;}
+header .menu #mainMenu span:nth-of-type(2) {top:10px;}
+header .menu #mainMenu span:last-child { top:20px;}
+/* hover */
+/* header .menu #mainMenu:hover span:first-child {transform:rotate(45deg); top:0;}
+header .menu #mainMenu:hover span:nth-of-type(2) {opacity: 0;}
+header .menu #mainMenu:hover span:last-child {transform:rotate(-45deg); top:0;} */
 header .menu #mainMenu span {
+    transition:all 0.3s;
+    position: absolute;
     display: block;
     width:40px; height: 4px; 
     /* background-color: #fff; */
@@ -31,6 +38,12 @@ header .menu #mainMenu span {
 header .menu #mainMenu span:nth-child(1) {}
 header .menu #mainMenu span:nth-child(2) {}
 header .menu #mainMenu span:nth-child(3) {}
+/* menu toggle */
+.first {transform:rotate(45deg); top:0 !important;}
+.second {transform:rotate(-45deg); top:0 !important;}
+.opacity {opacity: 0 !important;}
+.color {background-color: #fff !important;}
+.fixed {position: fixed !important;}
 /* nav */
 header .menu nav {
     display:flex; flex-flow: column nowrap;
@@ -41,7 +54,7 @@ header .menu nav {
     overflow-y:auto; 
     padding-top: 100px;
     overflow: hidden;
-    z-index: 90;
+    z-index: 10;
 }
 header .menu nav a::after {
     content:''; display: block;
@@ -243,6 +256,7 @@ main .wrap2 h2 {
     color:#30E413;
     padding-top: 50px;
 }
+
 main .wrap2 #life_slide {}
 main .wrap2 #life_slide .swiper-wrapper {}
 main .wrap2 #life_slide .swiper-wrapper .swiper-slide {
@@ -276,7 +290,7 @@ main .wrap2 #life_slide .swiper-wrapper .swiper-slide .slide_contents .slide_txt
     font-size: 1.3rem;
     /* background-color: aqua; */
     display: block;
-    line-height: 30px;
+    line-height: 35px;
     margin-top: 20px;
 }
 main .wrap2 #life_slide .swiper-wrapper .swiper-slide .slide_contents .slide_txt a:hover {
@@ -314,6 +328,7 @@ main .wrap3 h2 {
     margin-bottom: 50px;
     padding-top: 200px;
 }
+/* .swiper-slide {filter: blur(3px);} */
 main .wrap3 #news_slide {}
 main .wrap3 #news_slide .swiper-wrapper {}
 main .wrap3 #news_slide .swiper-wrapper .swiper-slide {}
@@ -329,7 +344,7 @@ main .wrap3 #news_slide .swiper-wrapper .slide4 a {background-image: url(../imag
 main .wrap3 #news_slide .swiper-wrapper .slide5 a {background-image: url(../images/m_news_5.jpg);}
 main .wrap3 #news_slide .swiper-scrollbar {
     background: #000; width: 500px;
-    left:50%; bottom: 15px; transform:translateX(-50%);
+    left:50%; bottom: 10px; transform:translateX(-50%);
 }   /* 스크롤 배경(크기, 위치o) */
 main .wrap3 #news_slide .swiper-scrollbar-drag {background-color: #30E413;}
 /* footer */

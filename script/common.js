@@ -6,8 +6,13 @@ console.log(menu,nav,span)
 nav.style.display = 'none'
 menu.addEventListener('click',function(){
     nav.classList.toggle('active')
-    menu.style.position = 'fixed'
-    span[0].style.backgroundColor = '#fff'
-    span[1].style.backgroundColor = '#fff'
-    span[2].style.backgroundColor = '#fff'
+    span[0].classList.toggle('color')
+    span[1].classList.toggle('color')
+    span[2].classList.toggle('color')
+
+    span[0].classList.toggle('first')
+    span[1].classList.toggle('opacity')
+    span[2].classList.toggle('second')
+    
+    menu.classList.toggle('fixed')
 })

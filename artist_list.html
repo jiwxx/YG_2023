@@ -33,7 +33,7 @@
                 <div id="blpin_bg">
                     <div class="mv">
                         <h1>MUSIC VIDEO</h1>
-                        <video src=""></video>
+                        <iframe width="970" height="545" src="https://www.youtube.com/embed/POe9SOEKotk" title="BLACKPINK - ‘Shut Down’ M/V" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         <div class="mvTxt">
                             <p>2nd 정규 앨범</p>
                             <h2>BORN PINK</h2>
@@ -74,11 +74,12 @@
     </main>
     <script>
         const news_slide = new Swiper("#music_slide",{
-            slidesPerView:6,
+            slidesPerView:4,
             centeredSlides:true,
             loop:true,
+            loopedSlides:2,
             autoplay:{
-                delay:2000,
+                delay:3000,
                 disableOnInteraction : false,
             },
             speed:800,

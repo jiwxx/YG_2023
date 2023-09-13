@@ -5,7 +5,7 @@ main .blackpink #blpin_bg {
 }
 main .artist {
     padding-top:100px;
-    background-color: aqua;
+    /* background-color: aqua; */
     height: 1028px;
     width:calc(100% - 60px); margin:0 auto;
     
@@ -32,10 +32,12 @@ main .artist .artistWrap .a_left button {
     display:block;
     background:none ;
     font-size: 4rem;
-    margin-bottom: 100px;
+    margin: 80px 0 100px 0;
     font-weight: 500;
 }
-main .artist .artistWrap .a_right {}
+main .artist .artistWrap .a_right {
+    position:absolute; top:250px; right:100px;
+}
 main .artist .artistWrap .a_right img {}
 main .blackpink {}
 main .blackpink #blpin_bg {}
@@ -48,8 +50,7 @@ main .blackpink #blpin_bg .mv h1 {
     padding-bottom: 30px;
     border-bottom: 1px solid #000;
 }
-main .blackpink #blpin_bg .mv video {
-    background-color: palegoldenrod;
+main .blackpink #blpin_bg .mv iframe {
     width:100%; height: 800px;
     margin-top:80px ;
 }
@@ -58,7 +59,7 @@ main .blackpink #blpin_bg .mv .mvTxt {
 }
 main .blackpink #blpin_bg .mv .mvTxt h2 {font-size: 3.1rem; font-weight: 700;}
 main .blackpink #blpin_bg .mv .mvTxt p {margin-top:80px;}
-main .blackpink #blpin_bg .mv .mvTxt p:first-child {font-size: 1.3rem;}
+main .blackpink #blpin_bg .mv .mvTxt p:first-child {font-size: 1.3rem; font-weight: 600;}
 main .blackpink #blpin_bg .mv .mvTxt p:nth-child(3),
 main .blackpink #blpin_bg .mv .mvTxt p:nth-child(4),
 main .blackpink #blpin_bg .mv .mvTxt p:nth-child(5) {font-size: 1.7rem; line-height: 40px;}
@@ -69,10 +70,12 @@ main .blackpink #blpin_bg .music h1 {
     border-bottom: 1px solid #000;
     width:calc(100% - 60px); margin:0 auto;
 }
+.swiper-slide-active {margin-top: -50px;}
 main .blackpink #blpin_bg .music #music_slide {padding-top:150px;}
-main .blackpink #blpin_bg .music #music_slide .swiper-slide {}
+main .blackpink #blpin_bg .music #music_slide .swiper-slide {transition: all 0.3s ease;}
 main .blackpink #blpin_bg .music #music_slide .swiper-wrapper {}
-main .blackpink #blpin_bg .music #music_slide .swiper-wrapper .swiper-slide {background-color: aqua; }
+main .blackpink #blpin_bg .music #music_slide .swiper-wrapper .swiper-slide {}
+main .blackpink #blpin_bg .music #music_slide .swiper-wrapper .swiper-slide { }
 main .blackpink #blpin_bg .music #music_slide .swiper-wrapper .swiper-slide a {display: block; width:400px; height: 400px;}
 main .blackpink #blpin_bg .music #music_slide .swiper-wrapper .slide1 a {background-image: url(../images/album2_04.jpg);}
 main .blackpink #blpin_bg .music #music_slide .swiper-wrapper .slide2 a {background-image: url(../images/album2_03.jpg);}
