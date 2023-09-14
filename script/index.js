@@ -25,21 +25,5 @@ const news_slide = new Swiper("#news_slide",{
         disableOnInteraction : false,
     },
     speed:800,
-    scrollbar:{el:'#news_slide .swiper-scrollbar'},
-    /*
-    on:{
-        init:function(){
-            //슬라이드가 변경되기 전 초기 실행함수
-            this.slides[this.activeIndex].querySelector('.swiper-slide swiper-slide-active').style.opacity ='1';
-        },
-        slideChange:function(){
-            //슬라이드 변경될 때 인식되는 실행 함수
-            //1.활성화(가운데) 슬라이드 제외 나머지 ~
-            this.slides.forEach(target => {
-                target.querySelector('swiper-slide').style.transform = 'scale(1)';
-            })
-            //2. 활성화 슬라이드
-            this.sldies[this.activeIndex].querySelector('swiper-slide-active').style.transform = 'scale(1.2)';
-        }
-    }*/
+    scrollbar:{el:'#News .swiper-scrollbar'},
 })

@@ -1,7 +1,8 @@
 main {
     width:calc(100% - 60px);
     margin:0 auto;
-    padding-top:100px;
+    padding:100px 0;
+    padding-bottom: 300px;
 }
 main .n_top {}
 main .n_top h1 {

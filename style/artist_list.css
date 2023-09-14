@@ -5,7 +5,6 @@ main .blackpink #blpin_bg {
 }
 main .artist {
     padding-top:100px;
-    /* background-color: aqua; */
     height: 1028px;
     width:calc(100% - 60px); margin:0 auto;
     
@@ -21,24 +20,65 @@ main .artist .artistWrap {
 }
 main .artist .artistWrap .a_left {padding-left:100px;}
 main .artist .artistWrap .a_left button:last-child {margin-bottom: 0;}
-main .artist .artistWrap .a_left button:after {
-    content:''; display:block;
-    height: 1px; width: 682px; background-color: #000;
-    position: absolute; bottom:-50px;
-    
+main .artist .artistWrap .a_left button:hover::before {
+    content:''; display: block;
+    background-image: url(../images/icon_star.png);
+    width:30px; height: 30px;
+    position: absolute; top:-20px; left:-35px;
+    animation: star 2.5s  linear infinite;
 }
-main .artist .artistWrap .a_left button:hover::after {}
+@keyframes star {
+    0% {transform:rotate(0);}
+    100% {transform:rotate(360deg);}
+}
+main .artist .artistWrap .a_left button:nth-of-type(1)::after {width:710px;}
+main .artist .artistWrap .a_left button:nth-of-type(2)::after {width:785px;}
+main .artist .artistWrap .a_left button:nth-of-type(3)::after {width: 990px;}
+main .artist .artistWrap .a_left button:nth-of-type(4)::after {width: 960px;}
+main .artist .artistWrap .a_left button:nth-of-type(5)::after {width:540px;}
+main .artist .artistWrap .a_left button::after {
+    content:''; display:block;
+    height: 2px; background-color: #000;
+    position: absolute; bottom:-15.5px;
+    transform:translateX(-100%) scale(0);
+    transition:all 0.5s ease;
+}
+main .artist .artistWrap .a_left button:hover::after {content:'';
+    transform:translateX(-50%) scale(1);
+}
+main .artist .artistWrap .a_left button:hover {
+    font-weight: 1000;
+    font-size: 5.5rem;
+    transform:translateX(100px);
+}
 main .artist .artistWrap .a_left button {
     display:block;
+    position:relative;
     background:none ;
     font-size: 4rem;
     margin: 80px 0 100px 0;
     font-weight: 500;
+    transition:all 0.3s ease;
 }
-main .artist .artistWrap .a_right {
-    position:absolute; top:250px; right:100px;
+main .artist .artistWrap .a_right {transition:all 0.3s linear;}
+main .artist .artistWrap .a_right img:nth-of-type(1),
+main .artist .artistWrap .a_right img:nth-of-type(2),
+main .artist .artistWrap .a_right img:nth-of-type(4),
+main .artist .artistWrap .a_right img:nth-of-type(5) {top:450px; right:300px;}
+main .artist .artistWrap .a_right img {
+    position:absolute; top:350px; right:100px;
+    opacity: 0;
 }
-main .artist .artistWrap .a_right img {}
+@keyframes mouse {
+    0% {transform: translateY(0);}
+    100% {transform: translateY(40px)}
+}
+main .mouse_btm {
+    margin-top: 80px;
+    text-align: center;
+    animation: mouse 0.7s ease alternate-reverse infinite;
+}
+main .mouse_btm img {}
 main .blackpink {}
 main .blackpink #blpin_bg {}
 main .blackpink #blpin_bg .mv {
@@ -50,7 +90,7 @@ main .blackpink #blpin_bg .mv h1 {
     padding-bottom: 30px;
     border-bottom: 1px solid #000;
 }
-main .blackpink #blpin_bg .mv iframe {
+main .blackpink #blpin_bg .section iframe {
     width:100%; height: 800px;
     margin-top:80px ;
 }
@@ -72,11 +112,11 @@ main .blackpink #blpin_bg .music h1 {
 }
 .swiper-slide-active {margin-top: -50px;}
 main .blackpink #blpin_bg .music #music_slide {padding-top:150px;}
-main .blackpink #blpin_bg .music #music_slide .swiper-slide {transition: all 0.3s ease;}
+main .blackpink #blpin_bg .music #music_slide .swiper-slide {transition: all 0.3s linear;}
 main .blackpink #blpin_bg .music #music_slide .swiper-wrapper {}
 main .blackpink #blpin_bg .music #music_slide .swiper-wrapper .swiper-slide {}
 main .blackpink #blpin_bg .music #music_slide .swiper-wrapper .swiper-slide { }
-main .blackpink #blpin_bg .music #music_slide .swiper-wrapper .swiper-slide a {display: block; width:400px; height: 400px;}
+main .blackpink #blpin_bg .music #music_slide .swiper-wrapper .swiper-slide a {display: block; width:400px; height: 400px; border-radius: 20px;}
 main .blackpink #blpin_bg .music #music_slide .swiper-wrapper .slide1 a {background-image: url(../images/album2_04.jpg);}
 main .blackpink #blpin_bg .music #music_slide .swiper-wrapper .slide2 a {background-image: url(../images/album2_03.jpg);}
 main .blackpink #blpin_bg .music #music_slide .swiper-wrapper .slide3 a {background-image: url(../images/album2_05.jpg);}
@@ -113,3 +153,10 @@ main .blackpink #blpin_bg .btm_bg {
     background-size: 100%;
     width:1920px; height:1290px;
 }
+main .winner {}
+main .winner .Ctxt {text-align: center; font-size: 3.1rem; font-weight: 600; padding:100px 0;}
+main .bigbang .Ctxt {text-align: center; font-size: 3.1rem; font-weight: 600; padding:100px 0;}
+main .gdragon .Ctxt {text-align: center; font-size: 3.1rem; font-weight: 600; padding:100px 0;}
+main .akmu .Ctxt {text-align: center; font-size: 3.1rem; font-weight: 600; padding:100px 0;}
+.active {display: block !important;}
+.opacity {opacity: 1 !important;}

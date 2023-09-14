@@ -8,11 +8,48 @@
     <title>Artist | YG Entertainment</title>
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/artist_list.css">
+    <!-- <link rel="stylesheet" href="./style/common.css"> -->
     <!-- swiper slide -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 </head>
 <body>
+    <header>
+        <div class="menu">
+            <!-- 메뉴 버튼 -->
+            <button type="button" id="mainMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <!-- 메뉴 -->
+            <nav>
+                <a href="#">NOTICE</a>
+                <a href="./news.html">NEWS</a>
+                <a href="./artist_list.html">ARTISTS</a>
+                <a href="#">ACTORS</a>
+                <a href="./mv.html">MULTIMEDIA</a>
+                <a href="#">WITH</a>
+                <a href="#">AUDITION</a>
+            </nav> 
+        </div>
+        <a href="./index.html" class="mainLogo"><img src="./images/logo.png" alt="yg entertainment"></a>
+        <div class="h_right">
+            <form action="#" method="get" id="searchFrm">
+                <fieldset>
+                    <legend class="skip">검색양식</legend>
+                    <button type="button" id="searchBtn"><img src="./images/icon_search.png" alt="검색하기"></button>
+                    <input type="text" name="search" id="searchTxt" placeholder="검색">
+                </fieldset>
+            </form>
+            <select name="lang" id="lang">
+                <option value="kr">KR</option>
+                <option value="en">EN</option>
+                <option value="jp">JP</option>
+                <option value="cn">CN</option>
+            </select>
+        </div>
+    </header>
     <main>
         <div class="artist">
             <h1>ARTIST</h1>
@@ -25,13 +62,22 @@
                     <button type="button">AKMU</button>
                 </div>
                 <div class="a_right">
-                    <img src="./images/blpin_black.png" alt="">
-                </div>
+                    <img src="./images/winner_logo.png" alt="">
+                    <img src="./images/bigbang_logo.png" alt="">
+                    <img src="./images/blpin_original.png" alt="">
+                    <img src="./images/gdragon_logo.png" alt="">
+                    <img src="./images/akmu_logo.png" alt="">
+                </div> 
             </div>
         </div>
-            <div class="blackpink">
+        <div class="mouse_btm">
+            <img src="./images/icon_mouse.png" alt="">
+        </div>
+            <div class="mainContents winner"><p class="Ctxt">Winner contents</p></div>
+            <div class="mainContents bigbang"><p class="Ctxt">bigbang contents</p></div>
+            <div class="mainContents blackpink">
                 <div id="blpin_bg">
-                    <div class="mv">
+                    <div class="section mv">
                         <h1>MUSIC VIDEO</h1>
                         <iframe width="970" height="545" src="https://www.youtube.com/embed/POe9SOEKotk" title="BLACKPINK - ‘Shut Down’ M/V" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         <div class="mvTxt">
@@ -44,7 +90,7 @@
                             <p>선공개곡부터 정규앨범과 월드투어까지. 대규모 프로젝트를 통해 블랙핑크가 어떠한 신기록을 써내려갈지 주목된다.</p>
                         </div>
                     </div>
-                    <div class="music">
+                    <div class="section music">
                         <h1>MUSIC</h1>
                         <!-- 2. swiper-slide -->
                         <div class="swiper" id="music_slide">
@@ -71,7 +117,34 @@
                     <div class="btm_bg"></div>
                 </div>
             </div>
+            <div class="mainContents gdragon"><p class="Ctxt">gdragon contents</p></div>
+            <div class="mainContents akmu"><p class="Ctxt">akmu contents</p></div>
     </main>
+    <footer>
+        <div class="f-top">
+            <div class="t-left">
+                <a href="#">ABOUT YG</a>
+                <a href="#">YG RECRUIT</a>
+                <a href="#">CUSTOMER CENTER</a>
+                <a href="#">개인정보처리방침</a>
+            </div>
+            <div class="t-right">
+                <a href="#">트위터</a>
+                <a href="#">페이스북</a>
+                <a href="#">유튜브</a>
+                <a href="#">인스타그램</a>
+            </div>
+        </div>
+        <div class="f-btm">
+            <h1><img src="./images/logo_w.png" alt=""></h1>
+            <p>
+                YG Entertainment의 모든 컨텐츠는 저작권의 보호를 받고 있습니다.<br>
+                Copyright YG Entertainment All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+    <script src="./script/list.js"></script>
+    <script src="./script/common.js"></script>
     <script>
         const news_slide = new Swiper("#music_slide",{
             slidesPerView:4,
@@ -84,6 +157,6 @@
             },
             speed:800,
         })
-    </script>
+        </script>
 </body>
 </html>
