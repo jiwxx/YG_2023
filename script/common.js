@@ -11,7 +11,7 @@ menu.addEventListener('click',function(){
     span[2].classList.toggle('color')
 
     span[0].classList.toggle('first')
-    span[1].classList.toggle('opacity')
+    span[1].classList.toggle('opacityzero')
     span[2].classList.toggle('second')
     
     menu.classList.toggle('fixed')

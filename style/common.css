@@ -41,7 +41,7 @@ header .menu #mainMenu span:nth-child(3) {}
 /* menu toggle */
 .first {transform:rotate(45deg); top:0 !important;}
 .second {transform:rotate(-45deg); top:0 !important;}
-.opacity {opacity: 0 !important;}
+.opacityzero {opacity: 0 !important;}
 .color {background-color: #fff !important;}
 .fixed {position: fixed !important;}
 /* nav */
