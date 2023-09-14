@@ -109,7 +109,7 @@ header .h_right #lang {
     margin-top: 10px;
 }
 header .h_right #lang option {}
-.active {display:flex !important;}
+.activeFlex {display:flex !important;}
 
 /* footer */
 footer {

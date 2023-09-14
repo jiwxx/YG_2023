@@ -5,7 +5,7 @@ console.log(menu,nav,span)
 
 nav.style.display = 'none'
 menu.addEventListener('click',function(){
-    nav.classList.toggle('active')
+    nav.classList.toggle('activeFlex')
     span[0].classList.toggle('color')
     span[1].classList.toggle('color')
     span[2].classList.toggle('color')
