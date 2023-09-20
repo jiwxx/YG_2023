@@ -17,6 +17,8 @@ main .artist h1 {
 main .artist .artistWrap {
     display: flex; flex-flow:row nowrap;
     align-items: center;
+    height:;
+    
 }
 main .artist .artistWrap .a_left {padding-left:100px;}
 main .artist .artistWrap .a_left button:last-child {margin-bottom: 0;}
