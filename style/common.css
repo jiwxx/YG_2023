@@ -1,15 +1,14 @@
 /* header */
-header{
-    width:calc(100% - 60px);
-    margin:0 auto;
-}
 header {
-    /* background-color: pink; */
+    width:100%;
+    margin:0 auto;
+    background-color: #fff;
     display:flex; flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
-    position: relative;
+    height: 95px;
+    position:relative; left:0; top:0; z-index:999;
+    padding:0 25px;
 }
 header .menu {}
 header .menu #mainMenu {
