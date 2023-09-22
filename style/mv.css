@@ -62,10 +62,11 @@ main .mvlist_btm ul li span {
 /* 뮤직비디오 1~4 top*/
 main .mv1-4 .mv > * {margin: 0 87px 50px 87px;}
 main .mv1-4 .mv {
-    border:1px solid #000;
+    background-color: #000;
+    padding-bottom: 50px;
 }
 main .mv1-4 .mv .mv-top {
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #fff;
     display: flex; flex-flow: row nowrap;
     justify-content: space-between;
     align-items: flex-end;
@@ -74,9 +75,9 @@ main .mv1-4 .mv .mv-top {
 main .mv1-4 .mv .mv-top h2 {
     font-size: 2.3rem;
     margin-top: 50px;
+    color:#fff;
 }
 main .mv1-4 .mv .mv-top .icon {}
-main .mv1-4 .mv .mv-top .icon .mv_L {}
 main .mv1-4 .mv .mv-top .icon .mv_C {}
 main .mv1-4 .mv .mv-top .icon p {cursor: pointer; display: inline-block;}
 main .mv1-4 .mv .mv-top .icon a {margin-top: 50px;}
@@ -88,16 +89,18 @@ main .mv1-4 .mv .video iframe {
 /* 뮤직비디오 5~7 btm */
 main .mv5-8 .mv > * {margin: 0 87px 50px 87px;}
 main .mv5-8 .mv {
-    border:1px solid #000;
+    background-color: #000;
+    padding-bottom: 50px;
 }
 main .mv5-8 .mv .mv-top {
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #fff;
     display: flex; flex-flow: row nowrap;
     justify-content: space-between;
     align-items: flex-end;
     padding-bottom:25px;
 }
 main .mv5-8 .mv .mv-top h2 {
+    color:#fff;
     font-size: 2.3rem;
     margin-top: 50px;
 }

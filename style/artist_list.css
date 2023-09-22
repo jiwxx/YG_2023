@@ -4,8 +4,8 @@ main .blackpink #blpin_bg {
     background-size: 400%;
 }
 main .artist {
-    padding-top:100px;
-    height: 1028px;
+    padding:150px 0;
+    height: 100%;
     width:calc(100% - 60px); margin:0 auto;
     
 }
@@ -16,11 +16,18 @@ main .artist h1 {
 }
 main .artist .artistWrap {
     display: flex; flex-flow:row nowrap;
-    align-items: center;
-    height:;
-    
+    /* justify-content: center; */
+    /* align-items: center; */
+    animation: center 2.5s ease;
 }
-main .artist .artistWrap .a_left {padding-left:100px;}
+@keyframes center {
+    0% {transform: translateX(50%); opacity: 0;}
+    100% {transform:translateX(0%); opacity: 1;}
+}
+main .artist .artistWrap .a_left {
+    padding-left:100px;
+    z-index: 100;
+}
 main .artist .artistWrap .a_left button:last-child {margin-bottom: 0;}
 main .artist .artistWrap .a_left button:hover::before {
     content:''; display: block;
@@ -62,7 +69,7 @@ main .artist .artistWrap .a_left button {
     font-weight: 500;
     transition:all 0.3s ease;
 }
-main .artist .artistWrap .a_right {transition:all 0.3s linear;}
+main .artist .artistWrap .a_right {transition:all 0.3s linear; z-index: 90;}
 main .artist .artistWrap .a_right img:nth-of-type(1),
 main .artist .artistWrap .a_right img:nth-of-type(2),
 main .artist .artistWrap .a_right img:nth-of-type(4),
