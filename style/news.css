@@ -26,7 +26,6 @@ main .n_top section .mainNews {
 }
 main .n_top section .mainNews .m_NImg {}
 main .n_top section .mainNews .m_NImg img {
-    background-color: indianred;
     width:500px; height: 400px;}
 main .n_top section .mainNews .m_NTxt {
     display:block; font-size: 2.1rem; line-height: 40px;
@@ -70,7 +69,6 @@ main .n_btm .newsRight a {
 main .n_btm .newsRight a .newsImg {padding-right: 30px;}
 main .n_btm .newsRight a .newsImg img {
     width:214px; height: 214px;
-    background-color: lightpink;
 }
 
 main .n_btm .newsRight a .newsWrap {}

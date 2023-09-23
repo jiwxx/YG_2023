@@ -20,18 +20,19 @@ main .mvlist_top ul {
     display: flex; flex-flow: row wrap;
     justify-content: space-between;
 }
-main .mvlist_top ul li {cursor: pointer; overflow: hidden;}
+main .mvlist_top ul li {cursor: pointer;}
 /* main .mvlist_top ul li img::after {
     content:'';
     background-color: rgba(0,0,0,0.3);
     display:block;
     width:400px; height:400px;
 } */
-main .mvlist_top ul li img {
-    width:400px; height: 400px;
+main .mvlist_top ul li em {display: block; width:400px; height: 400px; overflow: hidden;}
+main .mvlist_top ul li em img {
+    width: 100%;
     transition:transform 0.5s ease;
 }
-main .mvlist_top ul li img:hover {
+main .mvlist_top ul li em img:hover {
     transform:scale(1.1);
 }
 main .mvlist_top ul li span {
@@ -47,8 +48,8 @@ main .mvlist_btm ul {
     justify-content: space-between;
 }
 main .mvlist_btm ul li {cursor: pointer; overflow: hidden;}
-main .mvlist_btm ul li img {
-    width:400px; height: 400px;
+main .mvlist_btm ul li em {display: block; overflow: hidden;width:400px; height: 400px;}
+main .mvlist_btm ul li em img {
     transition:transform 0.5s ease;
 }
 main .mvlist_btm ul li img:hover {
