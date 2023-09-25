@@ -1,6 +1,7 @@
 const menu = document.querySelector ('#mainMenu')
 const span = document.querySelectorAll ('.menu > #mainMenu > span')
 const nav = document.querySelector ('.menu > nav')
+// const up = documnent.querySelector('#up')
 console.log(menu,nav,span)
 
 nav.style.display = 'none'
