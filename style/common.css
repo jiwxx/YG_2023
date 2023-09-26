@@ -1,6 +1,12 @@
 /* up */
-#up {position: fixed; right:30px; bottom: 45px; width: 40px; height: 40px;}
+#up {position: fixed; right:40px; bottom: 45px; width: 40px; height: 40px; z-index: 10000;}
 #up img {}
+/* up toggle */
+.none {display: none !important;}
+body,html {
+    /* 스크롤 제어 애니메이션 CSS(body 선택자에)*/
+    scroll-behavior: smooth;
+}
 /* header */
 header {
     width:100%;

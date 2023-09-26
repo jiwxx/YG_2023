@@ -1,8 +1,8 @@
 const menu = document.querySelector ('#mainMenu')
 const span = document.querySelectorAll ('.menu > #mainMenu > span')
 const nav = document.querySelector ('.menu > nav')
-// const up = documnent.querySelector('#up')
-console.log(menu,nav,span)
+const up = document.querySelector('#up')
+console.log(menu,nav,span,up)
 
 nav.style.display = 'none'
 menu.addEventListener('click',function(){
@@ -16,4 +16,9 @@ menu.addEventListener('click',function(){
     span[2].classList.toggle('second')
     
     menu.classList.toggle('fixed')
+    up.classList.toggle('none')
+})
+
+up.addEventListener('click',function(){
+    window.scrollTo(0,100);
 })
