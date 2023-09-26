@@ -18,12 +18,12 @@ main .artist .artistWrap {
     display: flex; flex-flow:row nowrap;
     /* justify-content: center; */
     /* align-items: center; */
-    animation: center 2.5s ease;
+    /* animation: center 2.5s ease; */
 }
-@keyframes center {
+/* @keyframes center {
     0% {transform: translateX(50%); opacity: 0;}
     100% {transform:translateX(0%); opacity: 1;}
-}
+} */
 main .artist .artistWrap .a_left {
     padding-left:100px;
     z-index: 100;
