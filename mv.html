@@ -13,42 +13,7 @@
 </head>
 <body>
     <a href="#" id="up"><img src="./images/icon_up.png" alt="위로"></a>
-    <header>
-        <div class="menu">
-            <!-- 메뉴 버튼 -->
-            <button type="button" id="mainMenu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <!-- 메뉴 -->
-            <nav>
-                <a href="#">NOTICE</a>
-                <a href="./news.html">NEWS</a>
-                <a href="./artist_list.html">ARTISTS</a>
-                <a href="#">ACTORS</a>
-                <a href="./mv.html">MULTIMEDIA</a>
-                <a href="#">WITH</a>
-                <a href="#">AUDITION</a>
-            </nav> 
-        </div>
-        <a href="./index.html" class="mainLogo"><img src="./images/logo.png" alt="yg entertainment"></a>
-        <div class="h_right">
-            <form action="#" method="get" id="searchFrm">
-                <fieldset>
-                    <legend class="skip">검색양식</legend>
-                    <button type="button" id="searchBtn"><img src="./images/icon_search.png" alt="검색하기"></button>
-                    <input type="text" name="search" id="searchTxt" placeholder="검색">
-                </fieldset>
-            </form>
-            <select name="lang" id="lang">
-                <option value="kr">KR</option>
-                <option value="en">EN</option>
-                <option value="jp">JP</option>
-                <option value="cn">CN</option>
-            </select>
-        </div>
-    </header>
+    <?php include('./header.php') ?>
     <main>
         <h1>MULTIMEDIA</h1>
         <div class="mvlist_top">
@@ -160,29 +125,7 @@
             </div>
         </div>
     </main>
-    <footer>
-        <div class="f-top">
-            <div class="t-left">
-                <a href="#">ABOUT YG</a>
-                <a href="#">YG RECRUIT</a>
-                <a href="#">CUSTOMER CENTER</a>
-                <a href="#">개인정보처리방침</a>
-            </div>
-            <div class="t-right">
-                <a href="#">트위터</a>
-                <a href="#">페이스북</a>
-                <a href="#">유튜브</a>
-                <a href="#">인스타그램</a>
-            </div>
-        </div>
-        <div class="f-btm">
-            <h1><img src="./images/logo_w.png" alt=""></h1>
-            <p>
-                YG Entertainment의 모든 컨텐츠는 저작권의 보호를 받고 있습니다.<br>
-                Copyright YG Entertainment All Rights Reserved.
-            </p>
-        </div>
-    </footer>
+    <?php include('./footer.php') ?>
     <script src="./script/mv.js"></script>
     <script src="./script/common.js"></script>
 </body>
